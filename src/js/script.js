@@ -1,9 +1,11 @@
-
 const aptDescription = document.querySelector('.apt-description');
+const nav = document.querySelector('.nav');
+let i = 0;
+
 
 function updateAptDescription() {
 
-    let adjectives = ['znajdź spokój', 'zrelaksuj się', 'kontempluj', 'odpocznij']
+    let adjectives = ['znajdź spokój', 'zrelaksuj się', 'kontempluj', 'odpocznij!']
     
     setTimeout(function () {
         aptDescription.textContent = adjectives[i];
@@ -15,6 +17,10 @@ function updateAptDescription() {
     }, 600)
 }
 
+const navBg = () => {
+    scrollY > 100 ? nav.style.opacity = "1" : "";
+}
+
 
 //------Functions call------\\
 
@@ -22,3 +28,6 @@ function updateAptDescription() {
 setTimeout(() => {
     updateAptDescription();
 }, 2500);
+
+//handle navbar functions
+window.addEventListener('scroll', navBg)
