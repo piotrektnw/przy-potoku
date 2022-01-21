@@ -1,5 +1,6 @@
 const aptDescription = document.querySelector('.apt-description');
 const nav = document.querySelector('.nav');
+const date = document.querySelector('.date');
 let i = 0;
 
 
@@ -21,6 +22,10 @@ const navBg = () => {
     scrollY > 100 ? nav.style.opacity = "1" : "";
 }
 
+const currentDate = () => {
+    const year = (new Date).getFullYear();
+    date.innerText = year;
+}
 
 //------Functions call------\\
 
@@ -31,3 +36,6 @@ setTimeout(() => {
 
 //handle navbar functions
 window.addEventListener('scroll', navBg)
+
+// current year in footer
+currentDate();
