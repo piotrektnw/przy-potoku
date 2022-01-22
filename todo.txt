@@ -1,0 +1,4 @@
+- fix nav - while enlarging whole site, body becomes visible and moves footer
+- what we do - do it the same as on football website
+- change Font Awesome to Google Icons. Do not use Font Awesome cdn
+- there is something wrong with nav padding
