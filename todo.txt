@@ -1,4 +1,10 @@
 - fix nav - while enlarging whole site, body becomes visible and moves footer
-- what we do - do it the same as on football website
-- change Font Awesome to Google Icons. Do not use Font Awesome cdn
-- there is something wrong with nav padding
+- build page for room presentation
+- how to add gallery to the website
+- map and directions?
+- footer from football website or from paradise island
+
+
+// WHAT I NEED 
+- better quality pictures
+- pictures of rooms with names and description
