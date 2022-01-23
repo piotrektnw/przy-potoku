@@ -357,6 +357,7 @@ header {
 
 .opinions {
 	border-top: $orange 1px solid;
+	padding-bottom: 3em;
 
 	.title {
 		@include title-style;
@@ -373,9 +374,13 @@ header {
 			.quote {
 				padding: 1em 0 1em 2em;
 				font-size: 1.6rem;
-				border-bottom: 1px solid #000;
+				border-bottom: 1px solid $grey;
 				width: 90%;
 				margin: 0 auto;
+
+				.material-icons {
+					color: $grey;
+				}
 			}
 
 			.author {
@@ -396,117 +401,98 @@ header {
 // END OF OPINIONS
 //FOOTER
 .footer {
-	width: 100%;
-	background-color: $dark-blue;
+    color: $black;
+    background-color: $dark-grey;
 	border-top: $orange 1px solid;
 
-	.footer-ul {
+	a:hover {
+		color: $blue;
+		font-weight: bold;
+	}
+	&__boxes {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		list-style: none;
-		padding: 30px 0 30px 0;
+		justify-content: space-between;
+	}
 
-		&__item {
-			width: 30%;
-			min-width: 300px;
-			height: 400px;
-			color: white;
+	&__box-desktop {
+		display: block;
+	}
 
-			.title {
-				text-align: center;
-				font-size: 2rem;
-				text-transform: uppercase;
-				padding: 10px;
-				font-weight: bold;
-				color: white;
-				z-index: 5;
-			}
+	&__box {
+		margin: 0 2em;
+		width: 25%;
 
-			&--one {
-				// border-right: 1px $dark-grey solid;
-
-				.description {
-					width: 100%;
-					padding: 0 20px;
-					text-align: justify;
-
-					h3,
-					p {
-						font-weight: normal;
-						font-size: 1.7rem;
-						line-height: 3rem;
-					}
-				}
-			}
-
-			&--two {
-				// border-right: 1px $dark-grey solid;
-				position: relative;
-				height: 400px;
-
-				ul {
-					display: flex;
-					justify-content: space-around;
-					align-items: center;
-
-					li {
-						list-style: none;
-
-						i {
-							color: white;
-							font-size: 5rem;
-							transition: 0.3s color;
-						}
-
-						i:hover {
-							color: $pure-white;
-							cursor: pointer;
-						}
-					}
-				}
-			}
-			&--three {
-				text-align: center;
-
-				.footer-nav {
-					display: flex;
-					flex-direction: column;
-					align-content: center;
-
-					.footer-link {
-						font-size: 1.7rem;
-						list-style: none;
-						line-height: 3em;
-
-						a {
-							text-decoration: none;
-							color: white;
-							transition: 0.3s font-size, 0.3s color;
-						}
-					}
-
-					a:hover {
-						font-size: 1.8rem;
-						font-weight: bold;
-					}
-				}
-			}
+		&:first-child {
+			width: 50%;
 		}
 	}
-	.footer-bottom {
-		width: 100%;
-		height: 35px;
-		border-top: $orange 1px solid;
-		margin: 0 auto;
-		font-size: 1.8rem;
-		color: white;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		letter-spacing: 3px;
+
+	&__box-title {
+		font-size: 2.4rem;
+	}
+
+	&__box-list {
+		list-style: none;
+	}
+
+	&__box-content {
+		font-size: 1.6rem
+	}
+
+	&__box-list-item {
+		margin-bottom: 1em;
+
+		a {
+			color: $black;
+			text-decoration: none;
+		}
+
+}
+    .wrapper {
+        padding: 6em 2em 2em;
+    }
+
+    &__box {
+        font-size: 1.4rem;
+    }
+
+    &__box-title {
+        margin-bottom: 1em;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    &__box-social {
+        margin: 2em 0 1em;
+    }
+
+    &__box-link {
+        padding: 0.3em;
+        font-size: 2.6rem;
+        color: $black;
+        text-decoration: none;
+        transition: color .3s;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__bottom-text {
+		font-size: 2rem;
+		padding: auto;
+        text-align: center;
+
+		a {
+		color: $black;
+
+		}
+    }
+
+	.footer__bottom {
+	border-top: $orange 1px solid;
+		
 	}
 }
+
 
