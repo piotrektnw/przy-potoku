@@ -3,7 +3,6 @@
 - how to add gallery to the website
 - map and directions
 - contact
-- maybe some pause-section with nice picture and nice quote
 
 
 // WHAT I NEED 

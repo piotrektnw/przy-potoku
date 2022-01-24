@@ -171,42 +171,25 @@ header {
 	text-transform: uppercase;
 
 	.hero-img {
-		position: relative;
-		height: 100vh;
-		width: 100vw;
-		background-image: url('/src/img/exterior_winter.jpg');
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		overflow: hidden;
+		@include hero-img;
+        background-image: url('/src/img/exterior_winter.jpg');
 
 		.hero-text {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
+			@include hero-text;
 			padding-top: 14%;
-			z-index: 100;
-			color: $pure-white;
-			// text-shadow: 2px 2px 30px grey;
+
+
 			h1, h2 {
 				z-index: 20;
 				text-transform: none;
-			}
+				}	
+			}	
 
-		}
-
-		.hero-shadow {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-			z-index: 0;
-
-		
-		}
+			.hero-shadow { 
+				@include hero-shadow;	
+				}
 	}
+
 
 	.fa-chevron-down {
 		position: absolute;
@@ -397,8 +380,39 @@ header {
 
 
 }
-
 // END OF OPINIONS
+
+// START OF PAUSE 
+
+.pause {
+	
+		@include hero-img;
+        background-image: url('../../dist/img/babia_gora.webp');
+		height: 400px;
+
+		.hero-text {
+			@include hero-text;
+
+			p {
+				z-index: 20;
+				font-size: 5rem;
+				text-align: center;
+				font-family: 'Dancing Script', sans-serif;
+			width: 80%;
+			padding-top: 9%;	
+
+				}	
+			}	
+
+			.hero-shadow { 
+				@include hero-shadow;	
+				}
+	
+}
+
+//END OF PAUSE
+
+
 //FOOTER
 .footer {
     color: $black;
