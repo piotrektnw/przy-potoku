@@ -525,14 +525,43 @@ header {
       height: 100%;
     }
 
+    .background {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      transition: 0.3s color;
+      opacity: 0.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-align: center;
+        font-size: 2rem;
+        color: $black;
+      }
+    }
+
+    .background:hover {
+      cursor: pointer;
+      a {
+        color: $pure-white;
+      }
+    }
+
     .other-rooms {
       &__description {
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
       }
 
       &__list {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
       }
 
@@ -541,38 +570,26 @@ header {
 
         &--one {
           background-image: url("../../dist/img/room1.webp");
-          width: 100%;
-          height: 100px;
           @include img-stylization;
         }
         &--two {
           background-image: url("../../dist/img/room2.webp");
-          width: 100%;
-          height: 100px;
           @include img-stylization;
         }
         &--three {
           background-image: url("../../dist/img/room3.webp");
-          width: 100%;
-          height: 100px;
           @include img-stylization;
         }
         &--four {
           background-image: url("../../dist/img/room4.webp");
-          width: 100%;
-          height: 100px;
           @include img-stylization;
         }
         &--five {
           background-image: url("../../dist/img/room5.webp");
-          width: 100%;
-          height: 100px;
           @include img-stylization;
         }
         &--six {
           background-image: url("../../dist/img/room6.webp");
-          width: 100%;
-          height: 100px;
           @include img-stylization;
         }
       }
@@ -582,6 +599,40 @@ header {
 
 //END OF ROOM PRESENTATION
 
+// START OF CONTACT
+
+.contact {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200px;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    color: white;
+
+    .elem1 {
+      background-color: brown;
+      flex-grow: 1;
+      min-width: 250px;
+    }
+
+    .elem2 {
+      background-color: green;
+      flex-grow: 1;
+      min-width: 250px;
+    }
+
+    .elem3 {
+      background-color: blue;
+      flex-grow: 1;
+      min-width: 250px;
+    }
+  }
+}
+
+// END OF CONTACT
 //FOOTER
 .footer {
   color: $black;

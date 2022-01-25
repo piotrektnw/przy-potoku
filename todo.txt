@@ -1,8 +1,9 @@
-- fix nav - while enlarging whole site, body becomes visible and moves footer
-- build page for room presentation
-- how to add gallery to the website
+- fix footer or body - while enlarging whole site, body becomes visible and moves footer
 - map and directions
 - contact
+- prepare links all over the website
+apartamentprzypotoku@gmail.com	
+przypotoku123!
 
 
 // WHAT I NEED 
