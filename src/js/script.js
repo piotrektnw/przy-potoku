@@ -8,7 +8,7 @@ function updateAptDescription() {
 
     let adjectives = ['znajdź spokój', 'zrelaksuj się', 'kontempluj', 'odpocznij!']
     
-    setTimeout(function () {
+      setTimeout(function () {
         aptDescription.textContent = adjectives[i];
         i++;
 

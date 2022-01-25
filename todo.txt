@@ -8,3 +8,4 @@
 // WHAT I NEED 
 - better quality pictures
 - pictures of rooms with names and description
+- if they have any prizes, from booking etc - i would like to include them on the website
