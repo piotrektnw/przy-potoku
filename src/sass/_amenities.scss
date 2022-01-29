@@ -1,0 +1,37 @@
+.amenities {
+  background-color: $pure-white;
+  // border-top: $orange 1px solid;
+
+  .material-icons {
+    color: $blue;
+    font-size: 5rem;
+  }
+
+  .hero-text {
+    display: flex;
+    height: 100%;
+    z-index: 2;
+    color: $black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .p-content {
+    font-size: 1.4rem;
+  }
+  // add this class in html to proper element to make them
+  // look better on mobile devices
+  .about-hero-item {
+    margin: 10px 0;
+
+    i {
+      font-size: 36px;
+    }
+  }
+}

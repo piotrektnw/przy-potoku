@@ -1,0 +1,22 @@
+.pause {
+  @include hero-img;
+  background-image: url("../../dist/img/babia_gora.webp");
+  height: 400px;
+
+  .hero-text {
+    @include hero-text;
+
+    p {
+      z-index: 20;
+      font-size: 5rem;
+      text-align: center;
+      font-family: "Dancing Script", sans-serif;
+      width: 80%;
+      padding-top: 9%;
+    }
+  }
+
+  .hero-shadow {
+    @include hero-shadow;
+  }
+}

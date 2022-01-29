@@ -1,7 +1,9 @@
 - fix footer or body - while enlarging whole site, body becomes visible and moves footer
-- prepare links all over the website
 apartamentprzypotoku@gmail.com	
 przypotoku123!
+
+- change footer
+- make nav rwd
 
 
 // WHAT I NEED 

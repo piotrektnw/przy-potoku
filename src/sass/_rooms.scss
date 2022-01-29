@@ -1,0 +1,76 @@
+.rooms {
+  // border-top: $orange 1px solid;
+
+  .flex-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .item {
+      flex-grow: 2;
+      min-width: 300px;
+      width: 33%;
+
+      .hero-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+
+        &__one {
+          background-image: url("../../dist/img/room1.webp");
+        }
+        &__two {
+          background-image: url("../../dist/img/room2.webp");
+        }
+        &__three {
+          background-image: url("../../dist/img/room3.webp");
+        }
+        &__four {
+          background-image: url("../../dist/img/room4.webp");
+        }
+        &__five {
+          background-image: url("../../dist/img/room5.webp");
+        }
+        &__six {
+          background-image: url("../../dist/img/room6.webp");
+        }
+      }
+
+      .hero-shadow {
+        background-color: black;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s;
+      }
+
+      .hero-shadow:hover {
+        opacity: 0.7;
+      }
+
+      .hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        letter-spacing: 6px;
+        height: 100%;
+        z-index: 2;
+        color: $pure-white;
+
+        a {
+          font-size: 3rem;
+        }
+
+        a:hover {
+          font-size: 3.4rem;
+          color: $pure-white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

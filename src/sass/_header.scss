@@ -1,0 +1,56 @@
+header {
+  h1 {
+    font-size: 8rem;
+    animation: tracking-in-expand 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+    font-family: "Dancing Script", sans-serif;
+    padding-bottom: 3rem;
+
+    .highlight {
+      color: $pure-white;
+    }
+  }
+
+  h2 {
+    font-size: 5rem;
+    animation: tracking-in-expand 1.5s 1.5s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+
+    .highlight {
+      font-family: "Dancing Script", sans-serif;
+      font-size: 8rem;
+    }
+  }
+
+  text-transform: uppercase;
+
+  .hero-img {
+    @include hero-img;
+    background-image: url("/src/img/exterior_winter.jpg");
+
+    .hero-text {
+      @include hero-text;
+      padding-top: 14%;
+
+      h1,
+      h2 {
+        z-index: 20;
+        text-transform: none;
+      }
+    }
+
+    .hero-shadow {
+      @include hero-shadow;
+    }
+  }
+
+  .fa-chevron-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 4rem;
+    color: $pure-white;
+    animation: chevron-animation 3s infinite;
+  }
+}
