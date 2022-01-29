@@ -20,6 +20,7 @@ function updateAptDescription() {
 
 const navBg = () => {
     scrollY > 100 ? nav.style.opacity = "1" : "";
+
 }
 
 const currentDate = () => {

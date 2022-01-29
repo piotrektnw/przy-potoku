@@ -52,10 +52,20 @@ a {
   z-index: 101;
   padding-right: 5rem;
   position: fixed;
-  height: 4rem;
+  height: 5rem;
   width: 100vw;
   opacity: 0.6;
   transition: 0.5s transform cubic-bezier(0.65, 0.05, 0.36, 1), 0.3s opacity;
+  .logo {
+    
+    position: absolute;
+    left: 40px;
+
+    img {
+      height: 5rem;
+
+    }
+  }
 }
 
 .nav:hover {
@@ -73,11 +83,12 @@ li {
 .menu-item {
   display: inline-block;
   cursor: pointer;
-  line-height: 3rem;
+  line-height: 4rem;
   margin: 0 10px;
   transition: background-color 0.3s;
   z-index: 101;
 }
+
 
 .nav-link {
   text-decoration: none;
@@ -650,10 +661,32 @@ header {
 
       &__three {
         width: 40%;
-       
-        overflow: hidden;
+        
       }
+
+      
     }
+  }
+  .navigate {
+    // display: none; - display on mobile devices
+    background-color: #4285F4;
+    width: 200px;
+    height: 50px;
+    border-radius: 16px;
+    border: none;
+    font-size: 2.4rem;
+    transition: .3s background-color;
+    
+  }
+
+  .navigate:hover {
+    background-color: #1C6DD0; 
+    cursor: pointer;
+    color: white;
+  }
+
+  a:hover {
+    color: white;
   }
 }
 
