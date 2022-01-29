@@ -607,27 +607,52 @@ header {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 200px;
     flex-wrap: wrap;
-    font-size: 3rem;
-    color: white;
 
-    .elem1 {
-      background-color: brown;
-      flex-grow: 1;
-      min-width: 250px;
-    }
+    .contact-data {
+      height: 400px;
+      min-width: 280px;
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    .elem2 {
-      background-color: green;
-      flex-grow: 1;
-      min-width: 250px;
-    }
+      li {
+        margin-bottom: 5px;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    .elem3 {
-      background-color: blue;
-      flex-grow: 1;
-      min-width: 250px;
+      .upper {
+        padding-bottom: 40px;
+      }
+
+      .material-icons,
+      .content {
+        display: inline-block;
+      }
+      .material-icons {
+        width: 70px;
+        font-size: 5rem;
+      }
+
+      .content {
+        width: 210px;
+        color: black;
+      }
+
+      &__one,
+      &__two {
+        width: 30%;
+      }
+
+      &__three {
+        width: 40%;
+       
+        overflow: hidden;
+      }
     }
   }
 }

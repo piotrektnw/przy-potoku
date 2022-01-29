@@ -1,6 +1,5 @@
 - fix footer or body - while enlarging whole site, body becomes visible and moves footer
-- map and directions
-- contact
+- logo
 - prepare links all over the website
 apartamentprzypotoku@gmail.com	
 przypotoku123!
