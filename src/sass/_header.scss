@@ -39,6 +39,16 @@ header {
       }
     }
 
+    .material-icons {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+      font-size: 7rem;
+      color: $pure-white;
+      animation: chevron-animation 3s infinite;
+    }
+
     .hero-shadow {
       @include hero-shadow;
     }
