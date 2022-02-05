@@ -1,9 +1,71 @@
 header {
+  .sticker {
+    position: absolute;
+    transform: translate(-95%);
+    background-color: $booking-yellow;
+    width: 200px;
+    height: 60px;
+    z-index: 10;
+    transition: 0.3s transform;
+    background: $booking-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .sticker:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+  .sticker:before {
+    content: "";
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid $booking-yellow;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+
+  .sticker:hover:after,
+  .sticker:hover {
+    transform: translate(0);
+    cursor: pointer;
+  }
+
+  .booking {
+    top: 100px;
+  }
+
+  .nocowanie {
+    top: 200px;
+  
+  }
+
+  .entrance-text {
+    font-size: 8rem;
+    font-family: "Dancing Script", sans-serif;
+  }
   .img {
     @include hero-img;
   }
   .img-one {
-    background-image: url("/dist/img/babia_gora.webp");
+    background-image: url("/dist/img/exterior_summer.webp");
   }
 
   .img-two {
@@ -11,14 +73,14 @@ header {
   }
 
   .img-three {
-    background-image: url("/dist/img/grill_house_interior_2.webp");
+    background-image: url("/dist/img/playground.webp");
   }
 
   .shadow {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   h5 {
