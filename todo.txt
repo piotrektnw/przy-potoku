@@ -1,4 +1,3 @@
-- fix footer or body - while enlarging whole site, body becomes visible and moves footer
 apartamentprzypotoku@gmail.com	
 przypotoku123!
 
