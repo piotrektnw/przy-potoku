@@ -1,66 +1,36 @@
 header {
-  h1 {
-    font-size: 8rem;
-    animation: tracking-in-expand 1.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1)
-      both;
-    font-family: "Dancing Script", sans-serif;
-    padding-bottom: 3rem;
-
-    .highlight {
-      color: $pure-white;
-    }
-  }
-
-  h2 {
-    font-size: 5rem;
-    animation: tracking-in-expand 1.5s 1.5s cubic-bezier(0.215, 0.61, 0.355, 1)
-      both;
-
-    .highlight {
-      font-family: "Dancing Script", sans-serif;
-      font-size: 8rem;
-    }
-  }
-
-  text-transform: uppercase;
-
-  .hero-img {
+  .img {
     @include hero-img;
-    background-image: url("../../dist/img/exterior_winter.webp");
-
-    .hero-text {
-      @include hero-text;
-      padding-top: 14%;
-
-      h1,
-      h2 {
-        z-index: 20;
-        text-transform: none;
-      }
-    }
-
-    .material-icons {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 20px;
-      font-size: 7rem;
-      color: $pure-white;
-      animation: chevron-animation 3s infinite;
-    }
-
-    .hero-shadow {
-      @include hero-shadow;
-    }
+  }
+  .img-one {
+    background-image: url("/dist/img/babia_gora.webp");
   }
 
-  .fa-chevron-down {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    font-size: 4rem;
+  .img-two {
+    background-image: url("/dist/img/grill_house_interior.webp");
+  }
+
+  .img-three {
+    background-image: url("/dist/img/grill_house_interior_2.webp");
+  }
+
+  .shadow {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  h5 {
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  h5,
+  p {
     color: $pure-white;
-    animation: chevron-animation 3s infinite;
   }
 }
