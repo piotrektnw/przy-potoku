@@ -1,7 +1,7 @@
 apartamentprzypotoku@gmail.com	
 przypotoku123!
 
-- change footer
+- change footer and make it rwd
 - make nav rwd
 
 

@@ -1,15 +1,21 @@
 .nav {
   display: flex;
   justify-content: end;
+  align-items: center;
   background-color: $pure-white;
   text-align: center;
   z-index: 101;
   padding-right: 5rem;
   position: fixed;
-  height: 5rem;
+  flex-wrap: wrap;
+  // height: 5rem;
   width: 100vw;
   opacity: 0.6;
   transition: 0.5s transform cubic-bezier(0.65, 0.05, 0.36, 1), 0.3s opacity;
+
+  .menu {
+    max-width: 75vw;
+  }
   .logo {
     position: absolute;
     left: 40px;
@@ -35,7 +41,7 @@ li {
 .menu-item {
   display: inline-block;
   cursor: pointer;
-  line-height: 4rem;
+  // line-height: 4rem;
   margin: 0 10px;
   transition: background-color 0.3s;
   z-index: 101;

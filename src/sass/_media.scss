@@ -1,0 +1,16 @@
+@media (max-width: 992px) {
+  .nav {
+    .menu-item {
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding-right: 3rem;
+    .menu-item {
+      margin: 0 5px;
+    }
+  }
+}
