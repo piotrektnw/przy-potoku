@@ -13,4 +13,27 @@
       margin: 0 5px;
     }
   }
-}
+
+  .footer {
+   
+    .footer__box {
+      width: 100%;
+
+      &-title {
+        text-align: center;
+      }
+      
+      &-content {
+        line-height: 3rem;
+      }
+
+      &-desktop {
+        display: none;
+      }
+
+      &-social {
+        text-align: center;
+      }
+  }
+
+}}
