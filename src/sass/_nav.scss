@@ -12,7 +12,6 @@
   width: 100vw;
   opacity: 0.6;
   transition: 0.5s transform cubic-bezier(0.65, 0.05, 0.36, 1), 0.3s opacity;
-
   .menu {
     max-width: 75vw;
   }
@@ -30,13 +29,13 @@
   opacity: 1;
 }
 
-li {
-  list-style: none;
-  text-decoration: none;
-  font-size: 2rem;
-  color: $blue;
-  transition: 0.3s font-size, 0.3s color;
-}
+// li {
+//   list-style: none;
+//   text-decoration: none;
+//   font-size: 2rem;
+//   color: $blue;
+//   transition: 0.3s font-size, 0.3s color;
+// }
 
 .menu-item {
   display: inline-block;

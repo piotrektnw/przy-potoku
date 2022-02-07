@@ -3,6 +3,7 @@ przypotoku123!
 
 - change footer and make it rwd
 - make nav rwd
+- na podstawie otrzymanych informacji "O nas" zaktualizuj meta tagi na stronach: index, about i rooms.
 
 
 // WHAT I NEED 
