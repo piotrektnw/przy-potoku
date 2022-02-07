@@ -1,3 +1,30 @@
+@media (max-width: 1100px) {
+  .contact {
+    .container {
+      .contact-data {
+        margin-bottom: 20px;
+
+        li {
+          margin-bottom: 0;
+        }
+
+        .upper {
+          padding-bottom: 20px;
+        }
+
+        &__one,
+        &__two {
+          width: 50%;
+        }
+
+        &__three {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .nav {
     .menu-item {
@@ -15,14 +42,13 @@
   }
 
   .footer {
-   
     .footer__box {
       width: 100%;
 
       &-title {
         text-align: center;
       }
-      
+
       &-content {
         line-height: 3rem;
       }
@@ -34,6 +60,26 @@
       &-social {
         text-align: center;
       }
+    }
   }
+}
 
-}}
+@media (max-width: 576px) {
+  .pause {
+    .hero-text {
+      p {
+        font-size: 4.6rem;
+      }
+    }
+  }
+}
+@media (max-width: 392px) {
+  .pause {
+    height: 300px;
+    .hero-text {
+      p {
+        font-size: 4rem;
+      }
+    }
+  }
+}
