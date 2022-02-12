@@ -1,6 +1,7 @@
 const aptDescription = document.querySelector('.apt-description');
 const nav = document.querySelector('.nav');
 const date = document.querySelector('.date');
+const closeBtn = document.querySelector('.close-button');
 let i = 0;
 
 
@@ -28,6 +29,10 @@ const currentDate = () => {
     date.innerText = year;
 }
 
+const closeNav = () => {
+    nav.classList.add("hidden")
+}
+
 //------Functions call------\\
 
 //entrance animation
@@ -37,6 +42,9 @@ setTimeout(() => {
 
 //handle navbar functions
 window.addEventListener('scroll', navBg)
+
+//hide nav
+closeBtn.addEventListener('click', closeNav)
 
 // current year in footer
 currentDate();

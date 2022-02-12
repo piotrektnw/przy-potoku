@@ -72,6 +72,25 @@
       }
     }
   }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .menu-item {
+    display: block;
+  }
+
+  .close-button {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 4em;
+  }
+
+  .hidden {
+    transform: translate(100%);
+  }
 }
 @media (max-width: 392px) {
   .pause {
