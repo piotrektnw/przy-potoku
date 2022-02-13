@@ -8,19 +8,19 @@ const sections = document.querySelectorAll('section, header');
 let i = 0;
 
 
-function updateAptDescription() {
+// function updateAptDescription() {
 
-    let adjectives = ['znajdź spokój', 'zrelaksuj się', 'kontempluj', 'odpocznij!']
+//     let adjectives = ['znajdź spokój', 'zrelaksuj się', 'kontempluj', 'odpocznij!']
     
-      setTimeout(function () {
-        aptDescription.textContent = adjectives[i];
-        i++;
+//       setTimeout(function () {
+//         aptDescription.textContent = adjectives[i];
+//         i++;
 
-        if (i < adjectives.length) {
-            updateAptDescription();
-        }
-    }, 600)
-}
+//         if (i < adjectives.length) {
+//             updateAptDescription();
+//         }
+//     }, 600)
+// }
 
 const navBg = () => {
     scrollY > 100 ? nav.style.opacity = "1" : "";
@@ -56,9 +56,9 @@ console.log(sections);
 //------Functions call------\\
 
 //entrance animation
-setTimeout(() => {
-    updateAptDescription();
-}, 2500);
+// setTimeout(() => {
+//     updateAptDescription();
+// }, 2500);
 
 //handle navbar functions
 window.addEventListener('scroll', navBg)
