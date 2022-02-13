@@ -29,6 +29,29 @@
   opacity: 1;
 }
 
+.open-nav {
+  display: none;
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  z-index: 400;
+  transform: translateY(100%);
+  transition: 0.3s transform;
+  background: none;
+  border: none;
+  position: fixed;
+  color: $pure-white;
+
+  .material-icons {
+    font-size: 4rem;
+  }
+}
+
+.display {
+  display: block;
+  transform: translateY(0);
+}
+
 // li {
 //   list-style: none;
 //   text-decoration: none;

@@ -2,6 +2,9 @@ const aptDescription = document.querySelector('.apt-description');
 const nav = document.querySelector('.nav');
 const date = document.querySelector('.date');
 const closeBtn = document.querySelector('.close-button');
+const openNav = document.querySelector('.open-nav');
+const menuItems = document.querySelectorAll('.menu-item');
+const sections = document.querySelectorAll('section, header');
 let i = 0;
 
 
@@ -30,7 +33,24 @@ const currentDate = () => {
 }
 
 const closeNav = () => {
-    nav.classList.add("hidden")
+    nav.classList.toggle("hidden")
+    console.log(menuItems);
+    setTimeout(function () {
+     openNav.classList.toggle('display')
+    }, 600)
+}
+
+const handleNavBtn = () => {
+    const currentSection = window.scrollY;
+
+    sections.forEach(section => {
+console.log(sections);
+        if (section.classList.contains('bright-section') && section.offsetTop <= currentSection + 10) {
+            openNav.classList.add('black-menu-btn')
+        } else if (!section.classList.contains('bright-section') && section.offsetTop <= currentSection + 10) {
+            openNav.classList.remove('black-menu-btn')
+        }
+    })
 }
 
 //------Functions call------\\
@@ -42,9 +62,14 @@ setTimeout(() => {
 
 //handle navbar functions
 window.addEventListener('scroll', navBg)
+window.addEventListener('scroll', handleNavBtn);
 
 //hide nav
 closeBtn.addEventListener('click', closeNav)
+openNav.addEventListener('click', closeNav)
+menuItems.forEach(item => {
+    item.addEventListener('click', closeNav)
+})
 
 // current year in footer
 currentDate();

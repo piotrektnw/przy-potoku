@@ -88,6 +88,11 @@
     right: 4em;
   }
 
+
+  .close-button:hover {
+    cursor: pointer;
+  }
+
   .hidden {
     transform: translate(100%);
   }
